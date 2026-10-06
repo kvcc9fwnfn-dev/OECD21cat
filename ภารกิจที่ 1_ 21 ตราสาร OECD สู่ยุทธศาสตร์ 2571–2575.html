@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ภารกิจที่ 1: 21 ตราสาร OECD สู่ยุทธศาสตร์พัฒนาระบบราชการ 2571–2575</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--bg2:#F6F4F3;--ink:#1F1B1A;--ink2:#5E5755;--line:#E3DEDC;--red:#A63126;--redbg:#FBEDEB;--s1:#0F6E56;--s1bg:#E4F3EE;--s2:#4A41B0;--s2bg:#EDECFA;--s3:#8A5410;--s3bg:#F9EEDC;--on:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171414;--bg2:#221E1D;--ink:#F2EEEC;--ink2:#B5ADAA;--line:#3A3433;--red:#F08A7E;--redbg:#3A1F1C;--s1:#5DCAA5;--s1bg:#12332B;--s2:#AFA9EC;--s2bg:#26224A;--s3:#EFB765;--s3bg:#3A2A12;--on:#171414}}
+:root[data-theme="dark"]{--bg:#171414;--bg2:#221E1D;--ink:#F2EEEC;--ink2:#B5ADAA;--line:#3A3433;--red:#F08A7E;--redbg:#3A1F1C;--s1:#5DCAA5;--s1bg:#12332B;--s2:#AFA9EC;--s2bg:#26224A;--s3:#EFB765;--s3bg:#3A2A12;--on:#171414}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{font-family:"IBM Plex Sans Thai","Noto Sans Thai","Sarabun",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;overflow:hidden;padding-top:env(safe-area-inset-top,0px)}
+.slide{display:none;height:calc(100% - 64px - env(safe-area-inset-bottom,0px));overflow-y:auto;padding:clamp(20px,4vw,56px) clamp(18px,5vw,72px)}
+.slide.on{display:block}
+.in{max-width:1080px;margin:0 auto}
+h1{font-size:clamp(28px,5.4vw,54px);line-height:1.25;font-weight:600;color:var(--red)}
+h2{font-size:clamp(22px,3.6vw,36px);line-height:1.3;font-weight:600;color:var(--ink)}
+.sub{font-size:clamp(15px,2vw,20px);color:var(--ink2);margin-top:10px;max-width:60ch}
+.pill{display:inline-block;background:var(--red);color:var(--on);font-size:14px;font-weight:500;padding:4px 16px;border-radius:999px;margin-bottom:16px}
+.cover{min-height:100%;display:flex;flex-direction:column;justify-content:center}
+.meta{margin-top:28px;font-size:14px;color:var(--ink2);border-top:1px solid var(--line);padding-top:14px;max-width:560px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:24px}
+.step{background:var(--bg2);border-radius:10px;padding:16px;border-top:3px solid var(--red)}
+.step b{display:block;font-size:17px;font-weight:600}
+.step span{font-size:14px;color:var(--ink2)}
+.key{background:var(--red);color:var(--on);border-radius:10px;padding:16px 20px;margin-top:20px;font-size:clamp(15px,2vw,19px)}
+.key b{font-weight:600;margin-right:10px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-top:28px}
+.big{background:var(--bg2);border-radius:12px;padding:18px 8px;text-align:center}
+.big b{display:block;font-size:clamp(36px,7vw,72px);line-height:1;font-weight:600;color:var(--red)}
+.big span{font-size:clamp(12px,1.6vw,16px);color:var(--ink2)}
+.arrow{font-size:28px;color:var(--ink2)}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.sc{border-radius:10px;padding:14px;font-size:14px}
+.sc b{display:block;font-size:16px;font-weight:600;margin-bottom:2px}
+.sc.a{background:var(--s1bg);color:var(--s1)}.sc.b{background:var(--s2bg);color:var(--s2)}.sc.c{background:var(--s3bg);color:var(--s3)}
+.grp{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
+.g{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.g h3{font-size:15px;font-weight:600;margin-bottom:6px}
+.g h3 i{font-style:normal;color:var(--red);margin-right:6px}
+.cd{display:flex;flex-wrap:wrap;gap:5px}
+.cd span{font-size:13px;background:var(--bg2);border-radius:6px;padding:2px 8px}
+.cd em{font-style:normal;color:var(--ink2);margin-right:4px}
+.shead{display:flex;align-items:center;gap:14px;border-left:6px solid var(--c);padding-left:16px}
+.shead .n{font-size:14px;color:var(--c);font-weight:500}
+.shead h2{color:var(--c)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.card{border:1px solid var(--line);border-left:4px solid var(--c);border-radius:8px;padding:11px 14px;background:var(--bg)}
+.card .t{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card strong{font-size:15px;font-weight:600}
+.card .c{font-size:12px;color:var(--ink2);white-space:nowrap}
+.card .th{font-size:13px;color:var(--ink2)}
+.card .ag{font-size:13px;margin-top:4px}
+.card .ag b{font-weight:500;color:var(--c)}
+.tg{font-size:12px;background:var(--cb);color:var(--c);border-radius:999px;padding:1px 9px;margin-left:6px;white-space:nowrap}
+.foot{margin-top:16px;font-size:14px;color:var(--ink2)}
+.mx{margin-top:22px;display:grid;grid-template-columns:minmax(120px,1.6fr) repeat(3,1fr) 44px;gap:6px;align-items:stretch;font-size:14px}
+.mx>div{border-radius:8px;padding:8px 10px;display:flex;align-items:center;flex-wrap:wrap;gap:3px}
+.mh{font-weight:600;font-size:13px;color:var(--ink2)}
+.rl{background:var(--bg2);font-weight:500}
+.cell{justify-content:center}
+.z{background:transparent;color:var(--line)}
+.m1{background:var(--s1bg);color:var(--s1)}.m2{background:var(--s2bg);color:var(--s2)}.m3{background:var(--s3bg);color:var(--s3)}
+.cell b{font-weight:600;margin-right:4px}
+.cell small{font-size:12px}
+.tot{justify-content:center;font-weight:600}
+.two{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+.box{background:var(--bg2);border-radius:12px;padding:18px}
+.box h3{font-size:17px;font-weight:600;color:var(--red);margin-bottom:8px}
+.box ul{padding-left:18px;font-size:15px}
+.box li{margin-bottom:6px}
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+.pipe .step{border-top-width:3px}
+.pipe .step i{font-style:normal;font-size:13px;color:var(--red);font-weight:600}
+.nav{position:fixed;left:0;right:0;bottom:0;height:calc(64px + env(safe-area-inset-bottom,0px));padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding-left:clamp(14px,4vw,40px);padding-right:clamp(14px,4vw,40px);gap:10px}
+.nav button{font:inherit;font-size:15px;font-weight:500;background:var(--red);color:var(--on);border:0;border-radius:8px;padding:10px 20px;cursor:pointer;min-width:84px}
+.nav button:disabled{opacity:.3;cursor:default}
+.nav button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.bar{flex:1;max-width:420px;display:flex;flex-direction:column;gap:6px;align-items:center;font-size:13px;color:var(--ink2)}
+.trk{width:100%;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.trk i{display:block;height:100%;background:var(--red);width:0;transition:width .25s}
+@media (max-width:720px){
+.flow{grid-template-columns:1fr;}.arrow{transform:rotate(90deg);text-align:center}
+.cols3,.grp,.cards,.two{grid-template-columns:1fr}.pipe{grid-template-columns:1fr 1fr}
+.mx{grid-template-columns:minmax(90px,1.4fr) repeat(3,1fr) 34px;font-size:13px}.mx>div{padding:6px}.cell small{display:none}
+}
+@media (prefers-reduced-motion:reduce){.trk i{transition:none}}
+</style>
+</head>
+<body>
+
+<section class="slide on" data-t="ปก"><div class="in cover">
+<span class="pill">ภารกิจที่ 1</span>
+<h1>วิเคราะห์ประเด็นด้านธรรมาภิบาลภาครัฐตามมาตรฐาน OECD เพื่อการพัฒนาระบบราชการ</h1>
+<p class="sub">จัดกลุ่ม 21 ตราสาร OECD เป็น 8 ประเด็น และแมพเข้ากับ 3 ยุทธศาสตร์การพัฒนาระบบราชการ พ.ศ. 2571–2575</p>
+<p class="meta">มอบหมายงาน นปร. รุ่นที่ 17 · สำนักงาน ก.พ.ร.<br>ข้อมูลตราสาร ณ วันที่ 8 สิงหาคม 2568 (กองยุทธศาสตร์การพัฒนาระบบราชการ)</p>
+</div></section>
+
+<section class="slide" data-t="โจทย์"><div class="in">
+<span class="pill">โจทย์</span>
+<h2>ใช้มาตรฐาน OECD เป็นกรอบร่วมกำหนดทิศทางยุทธศาสตร์ 2571–2575</h2>
+<p class="sub">ผลผลิตที่ต้องส่งมอบ ไล่ตามลำดับการวิเคราะห์</p>
+<div class="steps">
+<div class="step"><b>1 · OECD Instrument Mapping</b><span>แผนที่ตราสาร OECD และความเชื่อมโยงกับไทย</span></div>
+<div class="step"><b>2 · Thematic Analysis</b><span>สังเคราะห์ข้ามตราสารว่า OECD ชี้ทิศทางใด</span></div>
+<div class="step"><b>3 · Thailand Gap &amp; Opportunity</b><span>สิ่งที่ทำแล้ว ช่องว่าง และโอกาสยกระดับ</span></div>
+<div class="step"><b>4 · Strategic Insights</b><span>10–15 ประเด็นสำคัญสำหรับร่างยุทธศาสตร์</span></div>
+</div>
+<div class="key"><b>Key message</b>เป้าหมายไม่ใช่แค่ "สรุป OECD" แต่คือการนำกรอบ OECD มาใช้ร่วมกันเพื่อมองหาโจทย์และทิศทางใหม่ของระบบราชการไทย</div>
+<p class="foot">เอกสารนี้ครอบคลุมขั้นที่ 1 และเริ่มต้นขั้นที่ 2 (จัดกลุ่มและแมพ)</p>
+</div></section>
+
+<section class="slide" data-t="ภาพรวม"><div class="in">
+<span class="pill">ภาพรวม</span>
+<h2>จาก 21 ตราสาร สู่ 8 ประเด็น และ 3 ยุทธศาสตร์</h2>
+<div class="flow">
+<div class="big"><b>21</b><span>ตราสาร OECD<br>(Public Governance)</span></div><div class="arrow">›</div>
+<div class="big"><b>8</b><span>ประเด็นหลัก<br>ที่ต้องศึกษา</span></div><div class="arrow">›</div>
+<div class="big"><b>3</b><span>ยุทธศาสตร์<br>ก.พ.ร. 2571–2575</span></div>
+</div>
+<div class="cols3">
+<div class="sc a"><b>ยุทธศาสตร์ 1 · 6 ฉบับ</b>รัฐที่เข้าใจประชาชนและพร้อมให้บริการ</div>
+<div class="sc b"><b>ยุทธศาสตร์ 2 · 7 ฉบับ</b>รัฐที่โปร่งใส ตรวจสอบได้ และรับฟังประชาชน</div>
+<div class="sc c"><b>ยุทธศาสตร์ 3 · 8 ฉบับ</b>รัฐที่ทำงานเป็นทีม แก้ปัญหาได้จริง และพร้อมรับอนาคต</div>
+</div>
+<p class="foot">การจัดกลุ่มอิงเนื้อหาใน "สาระสำคัญ" ของแต่ละตราสาร ตราสารที่คาบเกี่ยวหลายประเด็นจัดตามน้ำหนักหลัก</p>
+</div></section>
+
+<section class="slide" data-t="8 ประเด็น"><div class="in">
+<span class="pill">ขั้นที่ 1</span>
+<h2>จัดกลุ่ม 21 ตราสาร ตาม 8 ประเด็นหลัก</h2>
+<div class="grp">
+<div class="g"><h3><i>01</i>Strategic &amp; Whole-of-Government</h3><div class="cd"><span><em>0381</em>PCSD</span><span><em>0474</em>Youth</span></div></div>
+<div class="g"><h3><i>02</i>Open &amp; Participatory Government</h3><div class="cd"><span><em>0438</em>Open Gov</span><span><em>0498</em>Access to Justice</span><span><em>0503</em>Human-Centred Services</span></div></div>
+<div class="g"><h3><i>03</i>Public Integrity &amp; Trust</h3><div class="cd"><span><em>0316</em>COI</span><span><em>0379</em>Lobbying</span><span><em>0435</em>Public Integrity</span><span><em>0484</em>Trust &amp; Democracy</span><span><em>0505</em>Information Integrity</span></div></div>
+<div class="g"><h3><i>04</i>Regulatory Governance</h3><div class="cd"><span><em>0392</em>PPP</span><span><em>0411</em>Procurement</span><span><em>0460</em>Infrastructure</span></div></div>
+<div class="g"><h3><i>05</i>Digital / Data / AI Government</h3><div class="cd"><span><em>0406</em>Digital Gov</span><span><em>0463</em>Data Sharing</span><span><em>0491</em>Digital ID</span></div></div>
+<div class="g"><h3><i>06</i>Public Sector Leadership &amp; Capability</h3><div class="cd"><span><em>0445</em>PS Leadership</span><span><em>0418</em>Gender Equality</span></div></div>
+<div class="g"><h3><i>07</i>Evidence, Evaluation &amp; Performance</h3><div class="cd"><span><em>0478</em>Policy Evaluation</span></div></div>
+<div class="g"><h3><i>08</i>Innovation / Foresight / Resilience</h3><div class="cd"><span><em>0450</em>PS Innovation</span><span><em>0405</em>Critical Risks</span></div></div>
+</div>
+<p class="foot">รหัสคือเลขท้ายของ OECD/LEGAL/xxxx</p>
+</div></section>
+
+<section class="slide" data-t="ยุทธศาสตร์ 1"><div class="in" style="--c:var(--s1);--cb:var(--s1bg)">
+<div class="shead"><div><div class="n">ยุทธศาสตร์ 1 · 6 ตราสาร</div><h2>รัฐที่เข้าใจประชาชนและพร้อมให้บริการ</h2></div></div>
+<p class="sub">แกนคือบริการไร้รอยต่อ e-service ที่เชื่อมกันเป็น fully digital ตัวตนดิจิทัล และการแบ่งปันข้อมูล</p>
+<div class="cards">
+<div class="card"><div class="t"><strong>Human-Centred Services<span class="tg">02</span></strong><span class="c">0503</span></div><div class="th">บริการสาธารณะที่ประชาชนเป็นศูนย์กลาง</div><div class="ag"><b>หน่วยงาน</b> ก.พ.ร. (เจ้าของเรื่อง), DGA</div></div>
+<div class="card"><div class="t"><strong>Digital Government<span class="tg">05</span></strong><span class="c">0406</span></div><div class="th">กลยุทธ์รัฐบาลดิจิทัล</div><div class="ag"><b>หน่วยงาน</b> ดศ., DGA, สพร.</div></div>
+<div class="card"><div class="t"><strong>Digital Identity<span class="tg">05</span></strong><span class="c">0491</span></div><div class="th">การบริหารจัดการอัตลักษณ์ดิจิทัล</div><div class="ag"><b>หน่วยงาน</b> ดศ., สพร., DGA, กรมการปกครอง, กรมการกงสุล</div></div>
+<div class="card"><div class="t"><strong>Data Access &amp; Sharing<span class="tg">05</span></strong><span class="c">0463</span></div><div class="th">การเข้าถึงและแบ่งปันข้อมูล</div><div class="ag"><b>หน่วยงาน</b> สคส., ดศ., สพร., DGA, สภาพัฒน์, สกมช., สสช.</div></div>
+<div class="card"><div class="t"><strong>Access to Justice<span class="tg">02</span></strong><span class="c">0498</span></div><div class="th">ระบบความยุติธรรมที่ประชาชนเป็นศูนย์กลาง</div><div class="ag"><b>หน่วยงาน</b> สำนักงานคณะกรรมการกฤษฎีกา, สป.ยุติธรรม</div></div>
+<div class="card"><div class="t"><strong>Young People<span class="tg">01</span></strong><span class="c">0474</span></div><div class="th">การสร้างโอกาสที่ดีขึ้นสำหรับเยาวชน</div><div class="ag"><b>หน่วยงาน</b> 9 หน่วย ด้านแรงงาน การศึกษา และสวัสดิการสังคม</div></div>
+</div>
+<p class="foot">ป้ายกลมคือหมายเลขประเด็นหลักจาก 8 ประเด็น</p>
+</div></section>
+
+<section class="slide" data-t="ยุทธศาสตร์ 2"><div class="in" style="--c:var(--s2);--cb:var(--s2bg)">
+<div class="shead"><div><div class="n">ยุทธศาสตร์ 2 · 7 ตราสาร</div><h2>รัฐที่โปร่งใส ตรวจสอบได้ และรับฟังประชาชน</h2></div></div>
+<p class="sub">กลุ่มที่หนาที่สุด ครอบคลุม open government, integrity, ความไว้วางใจ และข้อมูลบิดเบือน</p>
+<div class="cards">
+<div class="card"><div class="t"><strong>Open Government<span class="tg">02</span></strong><span class="c">0438</span></div><div class="th">รัฐบาลเปิด</div><div class="ag"><b>หน่วยงาน</b> ก.พ.ร. (เจ้าของเรื่อง), DGA, สปน.</div></div>
+<div class="card"><div class="t"><strong>Public Integrity<span class="tg">03</span></strong><span class="c">0435</span></div><div class="th">ความซื่อตรงในภาครัฐ</div><div class="ag"><b>หน่วยงาน</b> ก.พ., ป.ป.ท., ป.ป.ช., สตง., สปน.</div></div>
+<div class="card"><div class="t"><strong>Conflict of Interest<span class="tg">03</span></strong><span class="c">0316</span></div><div class="th">การจัดการความขัดแย้งทางผลประโยชน์</div><div class="ag"><b>หน่วยงาน</b> ป.ป.ช., ป.ป.ท., ก.พ., สปน.</div></div>
+<div class="card"><div class="t"><strong>Lobbying<span class="tg">03</span></strong><span class="c">0379</span></div><div class="th">ความโปร่งใสและซื่อสัตย์ในการล็อบบี้</div><div class="ag"><b>หน่วยงาน</b> ป.ป.ช., ป.ป.ท., กกต.</div></div>
+<div class="card"><div class="t"><strong>Trust &amp; Democracy<span class="tg">03</span></strong><span class="c">0484</span></div><div class="th">ปฏิญญาสร้างความไว้วางใจและเสริมสร้างประชาธิปไตย</div><div class="ag"><b>หน่วยงาน</b> สปน., กกต., ป.ป.ช., ผู้ตรวจการแผ่นดิน, กรมบัญชีกลาง</div></div>
+<div class="card"><div class="t"><strong>Information Integrity<span class="tg">03</span></strong><span class="c">0505</span></div><div class="th">ความซื่อตรงของข้อมูล</div><div class="ag"><b>หน่วยงาน</b> สปน., กรมประชาสัมพันธ์</div></div>
+<div class="card"><div class="t"><strong>Public Procurement<span class="tg">04</span></strong><span class="c">0411</span></div><div class="th">การจัดซื้อจัดจ้างภาครัฐ</div><div class="ag"><b>หน่วยงาน</b> กรมบัญชีกลาง, สงป., สตง.</div></div>
+</div>
+<p class="foot">ป.ป.ช. และ ป.ป.ท. เป็นเจ้าภาพหลักของหลายฉบับ ก.พ.ร. ต้องเลือกบทบาทว่าจะเสริมหรือเชื่อมในยุทธศาสตร์นี้</p>
+</div></section>
+
+<section class="slide" data-t="ยุทธศาสตร์ 3"><div class="in" style="--c:var(--s3);--cb:var(--s3bg)">
+<div class="shead"><div><div class="n">ยุทธศาสตร์ 3 · 8 ตราสาร</div><h2>รัฐที่ทำงานเป็นทีม แก้ปัญหาได้จริง และพร้อมรับอนาคต</h2></div></div>
+<p class="sub">แกนคือบูรณาการข้ามหน่วย การประเมินผล คน นวัตกรรม ความเสี่ยง และโครงสร้างพื้นฐาน</p>
+<div class="cards">
+<div class="card"><div class="t"><strong>Policy Coherence (PCSD)<span class="tg">01</span></strong><span class="c">0381</span></div><div class="th">ความสอดคล้องของนโยบายเพื่อการพัฒนาที่ยั่งยืน</div><div class="ag"><b>หน่วยงาน</b> สภาพัฒน์, สช.</div></div>
+<div class="card"><div class="t"><strong>Policy Evaluation<span class="tg">07</span></strong><span class="c">0478</span></div><div class="th">การประเมินนโยบายสาธารณะ</div><div class="ag"><b>หน่วยงาน</b> สงป., ก.พ.ร. (เจ้าของเรื่อง), สภาพัฒน์</div></div>
+<div class="card"><div class="t"><strong>PS Leadership &amp; Capability<span class="tg">06</span></strong><span class="c">0445</span></div><div class="th">ความเป็นผู้นำและความสามารถภาครัฐ</div><div class="ag"><b>หน่วยงาน</b> สำนักงาน ก.พ.</div></div>
+<div class="card"><div class="t"><strong>Gender Equality<span class="tg">06</span></strong><span class="c">0418</span></div><div class="th">ความเท่าเทียมทางเพศในชีวิตสาธารณะ</div><div class="ag"><b>หน่วยงาน</b> กรมกิจการสตรีฯ, กรมกิจการเด็กฯ, กรมสวัสดิการฯ, ก.พ.</div></div>
+<div class="card"><div class="t"><strong>PS Innovation<span class="tg">08</span></strong><span class="c">0450</span></div><div class="th">ปฏิญญาว่าด้วยนวัตกรรมภาครัฐ</div><div class="ag"><b>หน่วยงาน</b> ก.พ.ร. (เจ้าของเรื่อง), DGA, NIA</div></div>
+<div class="card"><div class="t"><strong>Critical Risks<span class="tg">08</span></strong><span class="c">0405</span></div><div class="th">การบริหารจัดการความเสี่ยงที่สำคัญ</div><div class="ag"><b>หน่วยงาน</b> สกมช., สคร., กห., สภาพัฒน์, ตร., ปภ., สพธอ.</div></div>
+<div class="card"><div class="t"><strong>Infrastructure<span class="tg">04</span></strong><span class="c">0460</span></div><div class="th">การบริหารจัดการโครงสร้างพื้นฐาน</div><div class="ag"><b>หน่วยงาน</b> กรมบัญชีกลาง, สงป., สคร., ป.ป.ช., สป.คค., สภาพัฒน์</div></div>
+<div class="card"><div class="t"><strong>Public-Private Partnerships<span class="tg">04</span></strong><span class="c">0392</span></div><div class="th">การบริหารจัดการความร่วมมือรัฐ-เอกชน</div><div class="ag"><b>หน่วยงาน</b> สคร., สงป.</div></div>
+</div>
+</div></section>
+
+<section class="slide" data-t="เมทริกซ์"><div class="in">
+<span class="pill">สรุป</span>
+<h2>แมพ 8 ประเด็น × 3 ยุทธศาสตร์</h2>
+<p class="sub">ตัวเลขคือจำนวนตราสารที่จัดอยู่ในช่องนั้น</p>
+<div class="mx">
+<div class="mh">ประเด็น</div><div class="mh cell">ยุทธ์ 1</div><div class="mh cell">ยุทธ์ 2</div><div class="mh cell">ยุทธ์ 3</div><div class="mh tot">รวม</div>
+<div class="rl">01 Strategic &amp; WoG</div><div class="cell m1"><b>1</b><small>0474</small></div><div class="cell z">–</div><div class="cell m3"><b>1</b><small>0381</small></div><div class="tot">2</div>
+<div class="rl">02 Open &amp; Participatory</div><div class="cell m1"><b>2</b><small>0503 0498</small></div><div class="cell m2"><b>1</b><small>0438</small></div><div class="cell z">–</div><div class="tot">3</div>
+<div class="rl">03 Integrity &amp; Trust</div><div class="cell z">–</div><div class="cell m2"><b>5</b><small>0316 0379 0435 0484 0505</small></div><div class="cell z">–</div><div class="tot">5</div>
+<div class="rl">04 Regulatory Governance</div><div class="cell z">–</div><div class="cell m2"><b>1</b><small>0411</small></div><div class="cell m3"><b>2</b><small>0460 0392</small></div><div class="tot">3</div>
+<div class="rl">05 Digital / Data / AI</div><div class="cell m1"><b>3</b><small>0406 0491 0463</small></div><div class="cell z">–</div><div class="cell z">–</div><div class="tot">3</div>
+<div class="rl">06 Leadership &amp; Capability</div><div class="cell z">–</div><div class="cell z">–</div><div class="cell m3"><b>2</b><small>0445 0418</small></div><div class="tot">2</div>
+<div class="rl">07 Evidence &amp; Performance</div><div class="cell z">–</div><div class="cell z">–</div><div class="cell m3"><b>1</b><small>0478</small></div><div class="tot">1</div>
+<div class="rl">08 Innovation / Foresight</div><div class="cell z">–</div><div class="cell z">–</div><div class="cell m3"><b>2</b><small>0450 0405</small></div><div class="tot">2</div>
+<div class="rl tot" style="justify-content:flex-start">รวม</div><div class="tot">6</div><div class="tot">7</div><div class="tot">8</div><div class="tot">21</div>
+</div>
+</div></section>
+
+<section class="slide" data-t="ข้อสังเกต"><div class="in">
+<span class="pill">ข้อสังเกต</span>
+<h2>ช่องว่างของชุดตราสารและโจทย์ที่ต้องคิดต่อ</h2>
+<div class="two">
+<div class="box"><h3>ช่องว่างของชุด 21 ฉบับ</h3><ul>
+<li>ประเด็น 04 ไม่มีตราสาร Regulatory Policy โดยตรง ใช้ PPP, Procurement และ Infrastructure แทน</li>
+<li>ประเด็น 05 ไม่มีตราสาร AI ทั้งที่ยุทธศาสตร์ 3 ระบุเรื่อง AI ควรดึง OECD AI Principles มาเทียบเพิ่ม</li>
+<li>ประเด็น 07 และ 08 มีตราสารน้อย แต่ทุกฉบับมีหมวดติดตามและประเมินผล ใช้เป็น cross-cutting theme</li>
+</ul></div>
+<div class="box"><h3>ประเด็นเชิงบทบาท ก.พ.ร.</h3><ul>
+<li>เป็นเจ้าของเรื่องโดยตรงเพียง 4 ฉบับ: 0438, 0450, 0478, 0503</li>
+<li>ประเด็น 03 หนักที่สุด (5 ฉบับ) และเป็นงานหลักของ ป.ป.ช./ป.ป.ท.</li>
+<li>หลายฉบับเกินอำนาจหน้าที่ ก.พ.ร. แต่ต้องผลักดันผ่านยุทธศาสตร์เพื่อรองรับการเป็นสมาชิก OECD</li>
+</ul></div>
+</div>
+<p class="foot">ข้อจำกัด: การจัดกลุ่มอิงตาราง "สาระสำคัญ" ควรเปิดตัวบทตราสารแต่ละฉบับยืนยันก่อนนำไปใช้</p>
+</div></section>
+
+<section class="slide" data-t="ขั้นต่อไป"><div class="in">
+<span class="pill">ขั้นต่อไป</span>
+<h2>จากการแมพ สู่ข้อเสนอเชิงยุทธศาสตร์</h2>
+<div class="pipe">
+<div class="step"><i>เสร็จแล้ว</i><b>1 · Instrument Mapping</b><span>จัดกลุ่ม 21 ฉบับ และแมพ 3 ยุทธศาสตร์</span></div>
+<div class="step"><i>ถัดไป</i><b>2 · Thematic Analysis</b><span>อ่านตัวบท สังเคราะห์ว่า OECD ชี้ทิศทางใดในแต่ละประเด็น</span></div>
+<div class="step"><i>ถัดไป</i><b>3 · Gap &amp; Opportunity</b><span>แมพ IM กับหลักการของตราสาร หาช่องว่างและวิธีปิด</span></div>
+<div class="step"><i>เป้าหมาย</i><b>4 · Strategic Insights</b><span>10–15 ประเด็นสำคัญสำหรับร่างยุทธศาสตร์ 2571–2575</span></div>
+</div>
+<div class="key"><b>ข้อควรระวัง</b>IM เป็นเอกสารลับ หากใช้ AI ช่วยแมพ ต้องเลือกเครื่องมือและวิธีที่เหมาะสมกับระดับชั้นข้อมูล</div>
+</div></section>
+
+<nav class="nav" aria-label="การนำทางสไลด์">
+<button id="pv" aria-label="สไลด์ก่อนหน้า">ก่อนหน้า</button>
+<div class="bar"><span id="lb"></span><div class="trk"><i id="pg"></i></div></div>
+<button id="nx" aria-label="สไลด์ถัดไป">ถัดไป</button>
+</nav>
+
+<script>
+(function(){
+var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pv=document.getElementById('pv'),nx=document.getElementById('nx'),lb=document.getElementById('lb'),pg=document.getElementById('pg');
+function go(n){
+i=Math.max(0,Math.min(s.length-1,n));
+s.forEach(function(e,k){e.classList.toggle('on',k===i)});
+s[i].scrollTop=0;
+pv.disabled=i===0;nx.disabled=i===s.length-1;
+lb.textContent=(i+1)+' / '+s.length+' · '+s[i].getAttribute('data-t');
+pg.style.width=((i+1)/s.length*100)+'%';
+try{history.replaceState(null,'','#'+(i+1))}catch(e){}
+}
+pv.onclick=function(){go(i-1)};nx.onclick=function(){go(i+1)};
+document.addEventListener('keydown',function(e){
+if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(i+1)}
+else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1)}
+else if(e.key==='Home')go(0);else if(e.key==='End')go(s.length-1);
+});
+var x0=null,y0=null;
+document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+document.addEventListener('touchend',function(e){
+if(x0===null)return;
+var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
+if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)go(dx<0?i+1:i-1);
+x0=null;
+},{passive:true});
+var h=parseInt((location.hash||'').slice(1),10);
+go(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>
